@@ -1,0 +1,29 @@
+<div ng-controller="ProjectController" class="project">
+    <div class="wrapper">
+        <section class="container">
+            <!-- Maybe do a carousel here? -->
+            <img class="project--img" ng-src="{{projects.img}}" alt="">
+        </section>
+    </div>
+    <div class="wrapper">
+        <section class="container content-section">
+            <h2>Project name: <span>{{projects.name}}</span></h2>
+            <h3>Role: {{projects.role}}</h3>
+        </section>
+        <section class="container content-section">
+            <h3>Tech Used on project</h3>
+            <div class="card-group row">
+                <div class="card tech col-lg-4" ng-repeat="tech in projects.tech">
+                    <div class="card-header">
+                        tech name
+                    </div>
+                    <img class="card-img-top tech__img" ng-src="{{tech}}" alt="Card image cap">
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h3>Project Description</h3>
+            <p>{{projects.description}}</p>
+        </section>
+    </div>
+</div>

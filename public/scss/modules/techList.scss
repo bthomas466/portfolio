@@ -1,0 +1,11 @@
+.tech {
+    @include e(list) {
+
+    }
+    @include e(img) {
+        width: 200px;
+        display: inline-block;
+        height: auto;
+        vertical-align: middle;
+    }
+}

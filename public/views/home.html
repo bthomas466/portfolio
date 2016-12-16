@@ -1,0 +1,42 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="header">
+        <h1 class="display-3">Brandon Thomas</h1>
+        <p class="lead">web developer | scrum master | team lead</p>
+    </div>
+</div>
+<section class="wrapper content-section">
+    <div class="container">
+        <h2>About me</h2>
+        <p>Bacon ipsum dolor amet tongue pork loin short ribs shank sausage. Pork loin pancetta shank pork chop meatloaf turkey. Short loin beef ribs tenderloin ground round pork bacon pig. Strip steak jerky shankle, corned beef tail shank brisket pork chop pork loin ham chuck flank. Picanha biltong bresaola, venison pastrami shank alcatra porchetta ground round cow ham leberkas kielbasa strip steak flank. Tail pork loin frankfurter, tenderloin beef rump </p>
+    </div>
+</section>
+<section ng-controller="MainController" class="wrapper wrapper--bg-dark content-section">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="row">
+            <div ng-repeat="project in allProjects" class="col-md-6">
+                <figure>
+                    <img src="http://placehold.it/400x300" />
+                    <figcaption>
+                        <h3>{{project.name}}</h3>
+                        <p>{{project.description}}</p>
+                        <a href="/projects/{{project._id}}">Details</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="wrapper content-section">
+    <div class="container">
+        <h2>Contact</h2>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/brandon-thomas-04aa181b" target="_blank"><img src="/images/linkedin.png" alt="LinkedIn Profile"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/brandon.william.thomas" target="_blank"><img src="/images/facebook.png" alt="Facebook Profile"></a>
+            </li>
+        </ul>
+    </div>
+</section>
