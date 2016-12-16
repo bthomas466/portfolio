@@ -15,7 +15,7 @@ var db = require('./config/db');
 
 mongoose.connect(db.url, function(err, db) {
     if(!err) {
-        console.log('connected!')
+        console.log('connected!');
     }else {
         console.log('wtf mate');
     }
